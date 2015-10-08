@@ -1,0 +1,611 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17-Sep-2015, 7:39:03 PM
+    Author     : Mohamed Ivaz
+*/
+
+
+
+
+html{
+
+    overflow-x: hidden;
+}
+body{
+    background-repeat:repeat;
+
+
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#nome{
+    position: absolute;
+    top:0px;
+}
+
+#login{
+    position: absolute;
+    top:20px;
+    right:10px; 
+    text-decoration: none;
+
+}
+
+#procurar{
+    position: absolute;
+    top: 80px;
+}
+
+#menu{
+    position: relative;
+    top: 70px;
+    left: 350px;
+
+}
+
+#categorias{
+    position: absolute;
+    top: 280px;
+    left: 20px;
+}
+#categorias th{
+    background-color: #333333;
+    color: white;
+    padding: 15px 0px;
+    font-size: 14pt;
+}
+#categorias td{
+    background-color: #990000;
+    padding: 10px 10px;
+    font-size: 13pt;
+
+}
+#categorias td:hover{
+    background-color: #cc0000;
+
+}
+
+#adcart:hover{
+    background-color: #cc0000;
+}
+#categorias a{
+    color: white;
+    text-decoration: none;
+}
+
+#criarProduto{
+    position: absolute;
+    top:200px;
+    left: 400px;
+}
+
+
+#grid{
+    box-shadow:  0px 0px 5px #333333;
+    padding: 0 0;
+
+}
+#grid:hover{
+    box-shadow:  2px 2px 10px #333333;
+    padding: 0 0;
+
+}
+.teste{
+    position: absolute;
+    top: 230px;
+    left:300px;
+    padding: 50px 50px;
+}
+.cabecalho{
+    position: relative;
+    top: 30px;
+    background-color: #990000;
+    color : white;
+    padding: 20px 0;
+
+    font-size: 10pt;
+}
+
+.login{
+    font-family: calibri;
+    background-color: #333333;
+    color : white;
+    padding: 10px 0;
+}
+.login h4{
+    position: relative;
+    left: 700px;
+}
+#menu a{
+
+    color: Black;
+}
+
+
+.carrinho a{
+
+    position: absolute;
+    top:0px;
+    left: 1050px;
+    background-color:#990000; 
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-bottom: 4px;
+    border-radius: 0px 0px 10px 10px;
+    text-decoration: none;
+    width:95px;
+    height:35px;
+    color:white;
+    font-family:RobotoSlab;
+
+}
+.carrinho a:hover{
+    background-color: #cc0000; 
+}
+#adcart{
+
+    background-color:#333333; 
+    padding: 7px 5px;
+    border-radius: 2px;
+    text-decoration: none;
+
+    color:white;
+    font-family:RobotoSlab;
+}
+#logout:hover{
+    color: #cc0000;
+}
+#linklogin:hover{
+    color: #cc0000;
+}
+#linkAdmin{
+    color: white;
+    position: relative;
+    left: 400px;
+}
+#linkAdmin:hover{
+    color: #cc0000;
+}
+.login a{
+    text-decoration: none;
+    color: white;
+}
+
+.home a{
+    position: absolute;
+    top:90px;
+    left: 1050px;
+    background-color:#990000; 
+
+
+}
+
+
+
+
+ul {
+    text-align: left;
+
+    display: inline;
+    margin: 0;
+    padding: 15px 525px 17px 0px;
+    list-style: none;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    background: #fff;
+}
+ul li {
+    font: bold 12px/18px sans-serif;
+    font-size: 10pt;
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+    padding: 15px 20px;
+    background: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+ul li:hover {
+    background: #555;
+    color: #fff;
+}
+ul li ul {
+    padding: 0;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 150px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transiton: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -transition: opacity 0.2s;
+}
+ul li ul li { 
+    background: #555; 
+    display: block; 
+    color: #fff;
+    text-shadow: 0 -1px 0 #000;
+}
+ul li ul li:hover { background: #666; }
+ul li:hover ul {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+#preco{
+    color: #990000;
+    font-size: 14pt;
+}
+
+.container-4{
+    overflow: hidden;
+    width: 300px;
+    vertical-align: middle;
+    white-space: nowrap;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    position: relative;
+    top: 23px;
+    left: 20px;
+}
+
+.container-4 input#search{
+    width: 300px;
+    height: 45px;
+    background: white;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: black;
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.container-4 input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+
+
+#procurar1{
+    margin: 0;
+    padding: 0;
+}
+.container-4 button{
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    border: none;
+    background: #232833;
+    height: 45px;
+    width: 50px;
+
+    color: white;
+    opacity: 0;
+    font-size: 10pt;
+
+}
+
+.container-4 button.icon, .container-4:active button.icon, .container-4:focus button.icon{
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+}
+
+.container-4:hover button.icon:hover{
+    background: #cc0000;
+    color: white;
+}
+
+
+
+select {
+    padding: 10px;
+    width: 131%;
+    font-size: 1em;
+    margin: 0px 0px;
+    border:none;
+    box-shadow:  0px 0px 5px #333333;
+    color: #666666;
+    cursor: pointer;
+    background: none;
+    float: left;
+    outline: none;
+    font-weight: 700;
+    font-family: 'Oxygen', sans-serif;
+    background: #ffffff;
+    border-left: 6px solid #fff;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+}
+select:hover{
+    color: black;
+    border-left:8px solid#333333;
+}
+.insert:hover{
+    color: black;
+    border-left:8px solid#333333;
+}
+
+.insert{
+
+    padding: 10px;
+    width: 124%;
+
+    font-size: 1em;
+    margin: 0px 0px;
+    border:none;
+    box-shadow:  0px 0px 5px #333333;
+    color: #666666;
+    cursor: pointer;
+    background: none;
+    float: left;
+    outline: none;
+    font-weight: 700;
+    font-family: 'Oxygen', sans-serif;
+    background: #ffffff;
+    border-left: 6px solid #fff;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+}
+
+.insertText{
+    background: #990000;
+    color: white;
+
+    font-weight: 700;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#form{
+    position: relative;
+    top:90px;
+    left: 500px;
+}
+
+.nomeInserir{
+    position: relative;
+    top: 50px;
+    left: 700px;
+    background: #333333;
+    width: 250px;
+    color: white;
+    padding: 10px 10px;
+    box-shadow:  0px 0px 5px #333333;
+}
+.nomeInserir1{
+    position: relative;
+    top: 50px;
+    left: 600px;
+    background: #333333;
+    width: 250px;
+    color: white;
+    padding: 10px 10px;
+    box-shadow:  0px 0px 5px #333333;
+}
+.nomeInserir2{
+    position: relative;
+    top: 50px;
+    left: 630px;
+    background: #333333;
+    width: 250px;
+    color: white;
+    padding: 10px 10px;
+    box-shadow:  0px 0px 5px #333333;
+}
+.nomeIniciar{
+    position: relative;
+    top: 50px;
+    left: 660px;
+    background: #333333;
+    width: 150px;
+    color: white;
+    padding: 10px 10px;
+    box-shadow:  0px 0px 5px #333333;
+
+}
+
+.btn{
+    width: 100px;
+    background-color:#333333; 
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Oxygen', sans-serif;
+    color:white;
+    font-family:RobotoSlab;
+    font-size: 10pt;
+    border-radius: 2px;
+}
+.btn:hover{
+    background-color: #cc0000;
+}
+#tabelaFatura{
+    border-radius: 5px;
+    box-shadow:  0px 0px 5px #333333;
+}
+#tabelaFatura td{
+
+    padding: 7px;
+
+}
+
+#tabelaFatura #nomeDesc{
+    padding-left: 40px;
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+
+}
+
+#tabelaFatura #precoFatura{
+    border-bottom: 1px solid #ebebeb;
+    background-color: #fafafa;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 16pt;
+    color: #cc0000;
+}
+#total{
+    position: relative;
+    top: 45px;
+    left: 800px;
+    box-shadow:  0px 0px 5px #333333;
+    border-radius: 5px;
+}
+#subtotal{
+    box-shadow:  0px 0px 5px #333333;
+    border-radius: 5px;
+    position: relative;
+    top: 0px;
+    left: 500px;
+}
+
+#total td{
+    padding: 7px;
+
+}
+
+#subtotal td{
+    padding: 7px;
+    font-size:14pt;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ebebeb;
+}
+#x1{
+    color: #cc0000;  
+}
+
+#tabelaFatura #imagem{
+    border-bottom: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+}
+
+
+#MM{
+    background-color:#333333; 
+    padding: 5px 15px;
+    border-radius: 2px;
+    text-decoration: none;
+    color:white;
+    font-family:RobotoSlab; 
+
+}
+
+#checkout{
+    position: relative;
+    top: 200px;
+    left: 300px;
+}
+
+#tabelaFatura{
+    position: relative;
+    top: 50px;
+    left: 500px;
+
+}
+
+#carrinhoVazio{
+    position: relative;
+    top: 50px;
+}
+
+#sobre{
+    position: relative;
+    top: 50px;
+    left: 350px;
+     font-weight: 500;
+    font-family: sans-serif;
+    text-align: justify;
+}
+#comprar{
+    position: relative;
+    top: 100px;
+    left: 350px;
+     font-weight: 500;
+    font-family: sans-serif;
+    text-align: justify;
+    
+}
+textarea{
+
+    padding: 10px;
+    width: 124%;
+
+    font-size: 1em;
+    margin: 0px 0px;
+    border:none;
+    box-shadow:  0px 0px 5px #333333;
+    color: #666666;
+    cursor: pointer;
+    background: none;
+    float: left;
+    outline: none;
+    font-weight: 700;
+    font-family: 'Oxygen', sans-serif;
+    background: #ffffff;
+    border-left: 6px solid #fff;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+}
+
+#erro{
+    
+    position: relative;
+    top: 80px;
+    left: 580px;
+   
+    color:#cc0000;
+   
+
+
+}
+
+.rodape{
+    font-family: calibri;
+    background-color: #333333;
+    color : white;
+    padding: 10px 0;
+    position: relative;
+    top: 700px;
+}
+.rodape1{
+    font-family: calibri;
+    background-color: #333333;
+    color : white;
+    padding: 10px 0;
+    position: relative;
+    top: 100px;
+}
